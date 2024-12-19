@@ -26,7 +26,7 @@ export default function Home() {
     formData.append("question", question); // questionをFormDataに含める
 
     try {
-      const response = await fetch("http://localhost:8080/ask-pdf/", {
+      const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/ask-pdf/`, {
         method: "POST",
         body: formData,
       });
