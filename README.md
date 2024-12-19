@@ -1,23 +1,23 @@
-# PDF質問アプリ
+# PDF Question App
 
-PDFファイルからテキストを抽出し、ユーザーの質問に回答するアプリです。フロントエンドはNext.js、バックエンドはFastAPIで構築されています。
+An app that extracts text from PDF files and answers user questions based on that text. The frontend is built with Next.js and the backend with FastAPI.
 
-## 機能
+## Features
 
-- **PDFファイルのアップロード**
-- **質問に対する回答提供**
+- **Upload PDF files**
+- **Provide answers to questions**
 
-## プロジェクト構成
+## Project Structure
 
-- **フロントエンド**: Next.js
-- **バックエンド**: FastAPI
+- **Frontend**: Next.js
+- **Backend**: FastAPI
 
-## セットアップ手順
+## Setup Instructions
 
-### バックエンド
+### Backend
 
- `.env.sample` を `.env` にコピーし、OpenAI APIキーを設定します。
+Copy `.env.sample` to `.env` and set your OpenAI API key.
 
-### フロントエンド
+### Frontend
 
-　`.env` にバックエンドのURLを設定します。
+Set the backend URL in the `.env` file.
