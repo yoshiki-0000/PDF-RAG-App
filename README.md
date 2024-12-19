@@ -1,4 +1,4 @@
-# PDF Question App
+# PDF RAG App
 
 An app that extracts text from PDF files and answers user questions based on that text. The frontend is built with Next.js and the backend with FastAPI.
 
