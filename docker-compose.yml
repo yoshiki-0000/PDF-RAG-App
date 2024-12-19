@@ -1,0 +1,20 @@
+version: "3.8"
+
+services:
+  backend:
+    build:
+      context: ./backend  # backend フォルダ内でビルド
+    volumes:
+      - ./backend:/app  # ローカルの backend フォルダをコンテナの /app にマウント
+    ports:
+      - "8000:8000"
+    environment:
+      - PYTHONUNBUFFERED=1
+
+  frontend:
+    build:
+      context: ./frontend  # frontend フォルダ内でビルド
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend

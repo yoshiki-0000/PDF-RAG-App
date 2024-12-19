@@ -1,0 +1,34 @@
+# Python関連の不要ファイル
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# 環境変数ファイル
+.env
+
+# 仮想環境
+venv/
+.venv/
+
+# エディタやIDEの設定ファイル
+.vscode/
+.idea/
+
+# OS関連
+.DS_Store
+Thumbs.db
+
+# パッケージ管理関連
+*.egg
+*.egg-info/
+dist/
+build/
+*.egg-info
+
+# Docker関連
+*.log
+*.pid
+*.bak
+*.swp
+docker-compose.override.yml
